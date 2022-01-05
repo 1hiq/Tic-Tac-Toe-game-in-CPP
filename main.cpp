@@ -173,9 +173,13 @@ int main(void) {
 	cout << "|\t \t|\t \t|\t \t|\n";
 	cout << "-------------------------------------------------\n";
 	}
+	else {
+	cout << "You can only choose numbers from 1 to 9.\n";
+	return 0;
+	}
 
 	if (first == "X" && second == "X" && third == "X" || fourth == "X" && fifth == "X" && sixth == "X" || seventh == "X" && eighth == "X" && ninth == "X" || first == "X" && fourth == "X" && seventh == "X" || second == "X" && fifth == "X" && eighth == "X" || third == "X" && sixth == "X" && ninth == "X" || first == "X" && fifth == "X" && ninth == "X" || third == "X" && fifth == "X" && seventh == "X") {
-		cout << "X is win.\n";
+		cout << "\nX is win.\n";
 		return 0;
 	}
 
@@ -319,6 +323,10 @@ int main(void) {
 		cout << "|\t" << seventh << "\t|\t" << eighth << "\t|\t" << ninth << "\t|\n";
 		cout << "|\t \t|\t \t|\t \t|\n";
 		cout << "-------------------------------------------------\n";
+	}
+	else {
+	cout << "You can only choose numbers from 1 to 9.\n";
+	return 0;
 	}
 
 	if (first == "O" && second == "O" && third == "O" || fourth == "O" && fifth == "O" && sixth == "O" || seventh == "O" && eighth == "O" && ninth == "O" || first == "O" && fourth == "O" && seventh == "O" || second == "O" && fifth == "O" && eighth == "O" || third == "O" && sixth == "O" && ninth == "O" || first == "O" && fifth == "O" && ninth == "O" || third == "O" && fifth == "O" && seventh == "O") {
